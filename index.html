@@ -20,14 +20,14 @@ body, html {
 
 .tablink {
     background-color: #555;
-    color: #e6e6e6;
+    color: white;
     float: left;
     border: none;
     outline: none;
+    cursor: pointer;
     padding: 14px 16px;
     font-size: 17px;
-    width: 100%;
-	text-align: center;
+    width: 50%;
 }
 
 .tablink:hover {
@@ -47,21 +47,48 @@ body, html {
 }
 
 #MPU {background-color: white;}
-
+#Sky {background-color: #d9d9d9;}
+#Leaderboard {background-color: #ff4d4d;}
+#DMPU {background-color: gray;}
 </style>
 </head>
 <body>
 
 <div class="top"><img src="NaZPwbuw_400x400.jpg" style="width:75px;dispay:table-cell;vertical-align:middle;margin-top:5px;"></img></div>
-<div class="tablink">300x250 RON / AT - Active Lifestyle_Mobile Medium Rectangle_Consideration</div>
+<button class="tablink" onclick="openPage('MPU', this, '#bfbfbf')" id="defaultOpen">AT Active Lifestyle & Design Fenix 5</button>
+<button class="tablink" onclick="openPage('Sky', this, '#bfbfbf')">DE Active Lifestyle Fenix 5</button>
 
-<p> 
-<br></br>
-<div class="image"><script type="text/javascript" src="https://trc.audiencemanager.de/ad/?pl=5afab82b0ae899036e1b8052&cb=${CACHEBUSTER}&tc=${CLICK_URL_ENC}"></script> <noscript> <a href="https://trc.audiencemanager.de/ad/?t=c&pl=5afab82b0ae899036e1b8052&cb=${CACHEBUSTER}&tc=${CLICK_URL_ENC}"> <img src="https://trc.audiencemanager.de/ad/?t=i&pl=5afab82b0ae899036e1b8052&cb=${CACHEBUSTER}" alt="Click Here" border="0"> </a> </noscript>
-
-</div>
+<div id="MPU" class="tabcontent">
+  <h3></h3>
+  <div class="image"><script type="text/javascript" src="https://trc.audiencemanager.de/ad/?pl=5afab82b0ae899036e1b8052&cb=${CACHEBUSTER}&tc=${CLICK_URL_ENC}"></script> <noscript> <a href="https://trc.audiencemanager.de/ad/?t=c&pl=5afab82b0ae899036e1b8052&cb=${CACHEBUSTER}&tc=${CLICK_URL_ENC}"> <img src="https://trc.audiencemanager.de/ad/?t=i&pl=5afab82b0ae899036e1b8052&cb=${CACHEBUSTER}" alt="Click Here" border="0"> </a> </noscript></div>
 </p>
+</div>
+
+<div id="Sky" class="tabcontent">
+  <h3></h3>
+  <div class="image"><script type="text/javascript" src="https://trc.audiencemanager.de/ad/?pl=5afadd830ae8992d464c5042&cb=${CACHEBUSTER}&tc=${CLICK_URL_ENC}"></script> <noscript> <a href="https://trc.audiencemanager.de/ad/?t=c&pl=5afadd830ae8992d464c5042&cb=${CACHEBUSTER}&tc=${CLICK_URL_ENC}"> <img src="https://trc.audiencemanager.de/ad/?t=i&pl=5afadd830ae8992d464c5042&cb=${CACHEBUSTER}" alt="Click Here" border="0"> </a> </noscript></div>
+</p>
+</div>
 
 
+<script>
+function openPage(pageName,elmnt,color) {
+    var i, tabcontent, tablinks;
+    tabcontent = document.getElementsByClassName("tabcontent");
+    for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+    }
+    tablinks = document.getElementsByClassName("tablink");
+    for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].style.backgroundColor = "";
+    }
+    document.getElementById(pageName).style.display = "block";
+    elmnt.style.backgroundColor = color;
+
+}
+// Get the element with id="defaultOpen" and click on it
+document.getElementById("defaultOpen").click();
+</script>
+     
 </body>
 </html> 
