@@ -20,14 +20,14 @@ body, html {
 
 .tablink {
     background-color: #555;
-    color: white;
+    color: #e6e6e6;
     float: left;
     border: none;
     outline: none;
-    cursor: pointer;
     padding: 14px 16px;
     font-size: 17px;
-    width: 25%;
+    width: 100%;
+	text-align: center;
 }
 
 .tablink:hover {
@@ -46,62 +46,25 @@ body, html {
 	width: 15%;
 }
 
-#MPU {background-color: #f2f2f2;}
-#Sky {background-color: #e6e6e6;}
-#Leaderboard {background-color: #d9d9d9;}
-#DMPU {background-color: #cccccc;}
+#MPU {background-color: yellow;}
+
 </style>
 </head>
 <body>
 
 <div class="top"><img src="NaZPwbuw_400x400.jpg" style="width:75px;dispay:table-cell;vertical-align:middle;margin-top:5px;"></img></div>
-<button class="tablink" onclick="openPage('MPU', this, '#bfbfbf')" id="defaultOpen">AT Active Lifestyle & Design Fenix 5</button>
-<button class="tablink" onclick="openPage('Sky', this, '#bfbfbf')">DE Active Lifestyle Fenix 5</button>
-<button class="tablink" onclick="openPage('Leaderboard', this, '#bfbfbf')">DE Bike Fenix 5</button>
-<button class="tablink" onclick="openPage('DMPU', this, '#bfbfbf')">DE Running Fenix 5</button>
+<div class="tablink">CH Active Lifestyle & Design Fenix 5</div>
 
-<div id="MPU" class="tabcontent">
-  <h3></h3>
-  <div class="image"><script type="text/javascript" src="https://trc.audiencemanager.de/ad/?pl=5afab82b0ae899036e1b8052&cb=${CACHEBUSTER}&tc=${CLICK_URL_ENC}"></script> <noscript> <a href="https://trc.audiencemanager.de/ad/?t=c&pl=5afab82b0ae899036e1b8052&cb=${CACHEBUSTER}&tc=${CLICK_URL_ENC}"> <img src="https://trc.audiencemanager.de/ad/?t=i&pl=5afab82b0ae899036e1b8052&cb=${CACHEBUSTER}" alt="Click Here" border="0"> </a> </noscript></div>
-</div></div>
-
-<div id="Sky" class="tabcontent">
-  <h3></h3>
-  <div class="image"><script type="text/javascript" src="https://trc.audiencemanager.de/ad/?pl=5afadd830ae8992d464c5042&cb=${CACHEBUSTER}&tc=${CLICK_URL_ENC}"></script> <noscript> <a href="https://trc.audiencemanager.de/ad/?t=c&pl=5afadd830ae8992d464c5042&cb=${CACHEBUSTER}&tc=${CLICK_URL_ENC}"> <img src="https://trc.audiencemanager.de/ad/?t=i&pl=5afadd830ae8992d464c5042&cb=${CACHEBUSTER}" alt="Click Here" border="0"> </a> </noscript></div>
-</div></div>
-
-<div id="Leaderboard" class="tabcontent">
-  <h3></h3>
-  <div class="image"><script type="text/javascript" src="https://trc.audiencemanager.de/ad/?pl=5afae9510ae89937b7120eb2&cb=${CACHEBUSTER}&tc=${CLICK_URL_ENC}"></script> <noscript> <a href="https://trc.audiencemanager.de/ad/?t=c&pl=5afae9510ae89937b7120eb2&cb=${CACHEBUSTER}&tc=${CLICK_URL_ENC}"> <img src="https://trc.audiencemanager.de/ad/?t=i&pl=5afae9510ae89937b7120eb2&cb=${CACHEBUSTER}" alt="Click Here" border="0"> </a> </noscript>
-</div></div>
-
-<div id="DMPU" class="tabcontent">
-  <h3></h3>
-  <div class="image"><script type="text/javascript" src="https://trc.audiencemanager.de/ad/?pl=5afaf6fe0ae899450073da72&cb=${CACHEBUSTER}&tc=${CLICK_URL_ENC}"></script> <noscript> <a href="https://trc.audiencemanager.de/ad/?t=c&pl=5afaf6fe0ae899450073da72&cb=${CACHEBUSTER}&tc=${CLICK_URL_ENC}"> <img src="https://trc.audiencemanager.de/ad/?t=i&pl=5afaf6fe0ae899450073da72&cb=${CACHEBUSTER}" alt="Click Here" border="0"> </a> </noscript>
-</div></div>
-
+<p> 
+<br></br>
+<div class="image"><script type="text/javascript" src="https://trc.audiencemanager.de/ad/?pl=5afc08110ae8997b0718a422&cb=${CACHEBUSTER}&tc=${CLICK_URL_ENC}"></script> <noscript> <a href="https://trc.audiencemanager.de/ad/?t=c&pl=5afc08110ae8997b0718a422&cb=${CACHEBUSTER}&tc=${CLICK_URL_ENC}"> <img src="https://trc.audiencemanager.de/ad/?t=i&pl=5afc08110ae8997b0718a422&cb=${CACHEBUSTER}" alt="Click Here" border="0"> </a> </noscript></div>
 </p>
-</div>
+
+<p>
+<br></br>
+<div class="image"><script type="text/javascript" src="https://trc.audiencemanager.de/ad/?pl=5afc08220ae89979de3de022&cb=${CACHEBUSTER}&tc=${CLICK_URL_ENC}"></script> <noscript> <a href="https://trc.audiencemanager.de/ad/?t=c&pl=5afc08220ae89979de3de022&cb=${CACHEBUSTER}&tc=${CLICK_URL_ENC}"> <img src="https://trc.audiencemanager.de/ad/?t=i&pl=5afc08220ae89979de3de022&cb=${CACHEBUSTER}" alt="Click Here" border="0"> </a> </noscript>
+</p>
 
 
-<script>
-function openPage(pageName,elmnt,color) {
-    var i, tabcontent, tablinks;
-    tabcontent = document.getElementsByClassName("tabcontent");
-    for (i = 0; i < tabcontent.length; i++) {
-        tabcontent[i].style.display = "none";
-    }
-    tablinks = document.getElementsByClassName("tablink");
-    for (i = 0; i < tablinks.length; i++) {
-        tablinks[i].style.backgroundColor = "";
-    }
-    document.getElementById(pageName).style.display = "block";
-    elmnt.style.backgroundColor = color;
-
-}
-// Get the element with id="defaultOpen" and click on it
-document.getElementById("defaultOpen").click();
-</script>
-     
 </body>
 </html> 
